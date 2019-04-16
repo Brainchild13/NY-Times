@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <title>New York Times Search</title>
+</head>
+
+<body>
+
+
+
+
+    <div class="container">
+
+
+        <div class="form-group">
+            <label for="search">Search Term:</label>
+            <input type="text" class="form-control" id="search-term">
+
+
+
+
+        </div>
+
+    </div>
+
+
+    <script src="https://api.nytimes.com/svc/search/v2/articlesearch.json?&api-key=zPgHaYbaww6ypAGuyRqxach4tRm1w7bW">
+    </script>
+    <script type="text/javascript">
+
+        var querySearch = $("#search")
+
+
+
+        // var startdate = "1975-02-03" > Startdate
+        var queryURL = "https://api.nytimes.com/svc/search/v2/articlesearch.json?q=" +
+            querySearch + "&api-key=zPgHaYbaww6ypAGuyRqxach4tRm1w7bW";
+
+        $.ajax({
+            url: queryURL,
+            method: "GET"
+        }).then(function (response) {
+
+
+            console.log(response);
+
+
+        });
+
+
+
+
+    </script>
+
+
+
+
+</body>
+
+</html>
