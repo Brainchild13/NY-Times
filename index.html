@@ -18,39 +18,53 @@
       <div class="jumbotron">
           <h1><strong><i class="fa fa-newspaper-o"></i> NY Times Search</strong></h1>
       </div>
+      <!-- Form Container -->
       <div class="formcontainer">
-        <form>
-          <div class="form-group">
-            <label for="searchTerm">Search Term:</label>
-            <input
-              type="text"
-              class="form-control"
-              id="searchTerm"
-              placeholder="Search term"
-            />
-          </div>
-          <div class="form-group">
-            <label for="numOfRecords">Number of Records:</label>
-            <select id="numOfRecords" class="form-control">
-              <option selected>Select</option>
-              <option value="1">1</option>
-              <option value="5">5</option>
-              <option value="10">10</option>
-            </select>
-          </div>
-          <div class="form-row">
-            <div class="form-group col-md-6">
-              <label for="startYear">Start Year (Optional):</label>
-              <input type="text" class="form-control" id="startYear" />
+          <div class="card">
+              <div class="card-header">
+                  <strong> <i class="fa fa-list-alt"></i> Search Parameters</strong>
+              </div>
+              <div class="card-body">
+                  <form>
+                      <div class="form-group">
+                        <label for="searchTerm">Search Term:</label>
+                        <input
+                          type="text"
+                          class="form-control"
+                          id="searchTerm"
+                          placeholder="Search term"
+                        />
+                      </div>
+                      <div class="form-group">
+                        <label for="numOfRecords">Number of Records:</label>
+                        <select id="numOfRecords" class="form-control">
+                          <option selected>Select</option>
+                          <option value="1">1</option>
+                          <option value="5">5</option>
+                          <option value="10">10</option>
+                        </select>
+                      </div>
+                      <div class="form-row">
+                        <div class="form-group col-md-6">
+                          <label for="startYear">Start Year (Optional):</label>
+                          <input type="text" class="form-control" id="startYear" />
+                        </div>
+                        <div class="form-group col-md-6">
+                          <label for="endYear">End Year (Optional):</label>
+                          <input type="text" class="form-control" id="endYear" />
+                        </div>
+                      </div>
+                      <button type="submit" class="btn btn-primary"><i class="fa fa-search"></i> Search</button>
+                      <button type="clear" class="btn btn-primary"><i class="fa fa-trash"></i> Clear Search</button>
+                    </form>
+
+
+
+
+
+              </div>
             </div>
-            <div class="form-group col-md-6">
-              <label for="endYear">End Year (Optional):</label>
-              <input type="text" class="form-control" id="endYear" />
-            </div>
-          </div>
-          <button type="submit" class="btn btn-primary">Search</button>
-          <button type="clear" class="btn btn-primary">Clear Search</button>
-        </form>
+        
       </div>
 
       <div class="articlecontainer">
