@@ -1,0 +1,17 @@
+.mainheader {
+  font-size: 60px;
+  text-align: center;
+  width: 600px;
+  margin: auto;
+}
+
+.formcontainer,
+.articleHeader {
+  width: 600px;
+  margin: auto;
+  margin-top: 20px;
+}
+
+.searchButton {
+  margin-right: 10px;
+}
