@@ -1,6 +1,5 @@
-.mainheader {
+.jumbotron {
   text-align: center;
-  width: 600px;
   margin: auto;
   background-color: #20315a;
   color: white;
@@ -9,7 +8,6 @@
 .formcontainer,
 .articleHeader,
 .articlecontainer {
-  width: 600px;
   margin: auto;
   margin-top: 20px;
 }
