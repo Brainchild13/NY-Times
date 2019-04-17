@@ -1,12 +1,14 @@
 .mainheader {
-  font-size: 60px;
   text-align: center;
   width: 600px;
   margin: auto;
+  background-color: #20315a;
+  color: white;
 }
 
 .formcontainer,
-.articleHeader {
+.articleHeader,
+.articlecontainer {
   width: 600px;
   margin: auto;
   margin-top: 20px;
